@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/registerStyle.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <title>PETS</title>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>PETs</h1>
+            <h1>Care</h1>
+        </div>
+
+        <ul>
+            <a href="./index.html"><li>Início</li></a>
+            <a href="#"><li>Serviços</li></a>
+            <a href="#"><li>Sobre</li></a>
+            <a href="#"><li>Contato</li></a>
+            <a href="./login.html" id="inscreva-se-btn"><li>Logar</li></a>
+        </ul>
+    </header>
+
+    <main>
+        <form id="registerForm" onsubmit="registrarUsuario(event)">
+            <input type="text" name="nome_usuario" placeholder="Nome de usuário" required>
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="text" name="cpf" placeholder="CPF" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <input id="submit" type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <script src="./scripts/register.js"></script>
+</body>
+</html>

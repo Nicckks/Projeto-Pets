@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style-loged-menu.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>PETs</h1>
+            <h1>Care</h1>   
+        </div>
+
+        <ul>
+            <a href="#"><li>Início</li></a>
+            <a href="#"><li>Serviços</li></a>
+            <a href="#"><li>Sobre</li></a>
+            <a href="#"><li>Contato</li></a>
+        </ul>
+    </header>
+    
+    <div class="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()">
+            <span class="material-icons">menu</span>
+        </div>
+        <div class="sidebar-buttons">
+            <button onclick="location.href='#'">
+                <span class="material-icons">person</span>
+                <span class="button-text">Usuário</span>
+            </button>
+            <button onclick="location.href='cosanguinidade.html'">
+                <span class="material-icons">bloodtype</span>
+                <span class="button-text">Cosanguinidade</span>
+            </button>
+            <button onclick="location.href='displasia.html'">
+                <span class="material-icons">favorite</span>
+                <span class="button-text">Displasia</span>
+            </button>
+            <button onclick="location.href='#'">
+                <span class="material-icons">pets</span>
+                <span class="button-text">Seus Pets</span>
+            </button>
+            <button onclick="location.href='#'">
+                <span class="material-icons">search</span>
+                <span class="button-text">Procurar parceiro</span>
+            </button>
+            <button onclick="location.href='#'">
+                <span class="material-icons">settings</span>
+                <span class="button-text">Configurações</span>
+            </button>
+        </div>
+        
+        <div class="logout-container">
+            <button onclick="logout()">
+                <span class="material-icons">logout</span>
+                <span class="button-text">Sair</span>
+            </button>
+        </div>
+    </div>
+
+    <aside>
+        <h2><span>Cálculo</span></h2>
+        <h2>Exame de Consanguinidade</h2>
+
+        <p>O coeficiente de consanguinidade (COI) visa mensurar o risco de ocorrência de doenças de origem genética
+            em cruzamentos consanguíneos.</p>
+        <p>O cálculo varia conforme o número de gerações a serem mapeadas e o número de ancestrais com coeficiente
+            de consanguinidade conhecido.</p>
+        <p>É desejável que o COI esteja abaixo de 10% para uma reprodução geneticamente segura.</p>
+
+        <form>
+            <input type="number" placeholder="Número de gerações">
+            <input type="number" placeholder="Número de ancestrais COI conhecido">
+            <input type="submit" value="Enviar">
+        </form>
+
+        <form>
+                <P>Seu pet:</P>
+                <input type="text" placeholder="pet">
+                
+                <P>Primeira Geração:</P>
+                <input type="text" placeholder="pai">
+                <input type="text" placeholder="mãe">
+
+                <P>Segunda Geração:</P>
+                <input type="text" placeholder="Vô 1">
+                <input type="text" placeholder="Vó 1">
+                <input type="text" placeholder="Vô 2">
+                <input type="text" placeholder="Vó 2">
+
+                <P>Terceira Geração:</P>
+                <input type="text" placeholder="bisavô 1">
+                <input type="text" placeholder="bisavó 1">
+                <input type="text" placeholder="bisavô 2">
+                <input type="text" placeholder="bisavó 2">
+                <input type="text" placeholder="bisavô 3">
+                <input type="text" placeholder="bisavó 3">
+                <input type="text" placeholder="bisavô 4">
+                <input type="text" placeholder="bisavó 4">
+
+                <input type="submit" value="Enviar">
+        </form>
+    </aside>
+
+    <main>
+        
+    </main>
+
+    <script src="./scripts/loged-menu.js"></script>
+</body>
+</html>

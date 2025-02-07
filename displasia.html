@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style-loged-menu.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>PETs</h1>
+            <h1>Care</h1>   
+        </div>
+
+        <ul>
+            <a href="#"><li>Início</li></a>
+            <a href="#"><li>Serviços</li></a>
+            <a href="#"><li>Sobre</li></a>
+            <a href="#"><li>Contato</li></a>
+        </ul>
+    </header>
+    
+    <div class="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()">
+            <span class="material-icons">menu</span>
+        </div>
+        <div class="sidebar-buttons">
+            <button onclick="location.href='#'">
+                <span class="material-icons">person</span>
+                <span class="button-text">Usuário</span>
+            </button>
+            <button onclick="location.href='cosanguinidade.html'">
+                <span class="material-icons">bloodtype</span>
+                <span class="button-text">Cosanguinidade</span>
+            </button>
+            <button onclick="location.href='#'">
+                <span class="material-icons">favorite</span>
+                <span class="button-text">Displasia</span>
+            </button>
+            <button onclick="location.href='#'">
+                <span class="material-icons">pets</span>
+                <span class="button-text">Seus Pets</span>
+            </button>
+            <button onclick="location.href='#'">
+                <span class="material-icons">search</span>
+                <span class="button-text">Procurar parceiro</span>
+            </button>
+            <button onclick="location.href='#'">
+                <span class="material-icons">settings</span>
+                <span class="button-text">Configurações</span>
+            </button>
+        </div>
+        
+        <div class="logout-container">
+            <button onclick="logout()">
+                <span class="material-icons">logout</span>
+                <span class="button-text">Sair</span>
+            </button>
+        </div>
+    </div>
+
+    <aside>
+        
+    </aside>
+
+    <main>
+        
+    </main>
+
+    <script src="./scripts/loged-menu.js"></script>
+</body>
+</html>
